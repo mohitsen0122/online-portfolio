@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg-img-body {
+    background-image: url('./images/hacker.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.tx-dec {
+    font-family: Segeo UI;
+    font-weight: 400;
+}
+.places {
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(36, 35, 35);
+}
+
+.transparent:hover {
+   opacity: 60%;
+   transition: 0.3s;
+}
+
+.img-size {
+    width: 170px;
+    height: auto;
+}
+
+.inv-txt-clr {
+    color: #fff;
+}
+.invert-color-container {
+    background-color: #fff;
+}
+.invert-color-section{
+    background-color: #fff;
+}
+.invert-color-swipe{
+    background-color: #000;
+}
+
+/* Cards Page CSS */
+.place-card {
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+}
+
+.place-img {
+    transition: .9s ease-in-out ;
+    cursor: pointer;
+    box-shadow: 0 0 3px lightgray;
+}
+
+.card-gap{
+    margin: 10px 10px;
+}
+.card-img:hover {
+    transform: scale(1.02);
+}
+#toggle {
+    display: none;
+}
+
+
+.btn-bg-color-white {
+    background-color: #fff;
+}
+.btn-bg-color-dark {
+    background-color: #000;
+}
+.button{
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button::after{
+    content: url(./images/sun.png);
+    width: 33px;
+    height: 33px;
+    background-color: #e03c3c;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: grid;
+    place-content: center;
+    line-height: 0;
+    -webkit-transition: .9s linear;
+    -moz-transition: .9s linear;
+    -ms-transition: .9s linear;
+    -o-transition: .9s linear;
+    transition: .9s linear;
+    transform: 6s ease-in;
+    
+
+}
+#toggle:checked + .button::after{
+    content: url(./images/moon.png);
+    background-color: #1f257f;
+    transform: translateX(50px) rotate(360deg);
+}
